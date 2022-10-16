@@ -15,11 +15,12 @@ class Services {
     }
   }
 
-  static Future<void> openCamera() async {
+  static Future<String> openCamera() async {
     try {
-      await platformChannel.invokeMethod('openCamera');
+      return await platformChannel.invokeMethod('openCamera');
     } catch (e) {
       log(e.toString());
+      return 'Could not open camera';
     }
   }
 

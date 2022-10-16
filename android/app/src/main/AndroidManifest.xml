@@ -2,7 +2,7 @@
     package="com.example.native_functions">
     <uses-permission android:name="android.permission.CAMERA" />
    <application
-        android:label="native_functions"
+        android:label="Native Functions"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
